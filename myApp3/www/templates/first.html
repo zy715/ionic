@@ -1,0 +1,33 @@
+<ion-view view-title="创业沙龙">
+	
+	<ion-content>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" class='lunbo' does-continue='true' auto-play="true">
+			  <ion-slide>
+			    <div class="box blue"><img src="http://n.sinaimg.cn/tech/transform/20170516/weVA-fyfeutq0770057.jpg"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box yellow"><img src="http://n.sinaimg.cn/tech/transform/20170516/uAd9-fyfeutq0726697.jpg"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box pink"><img src="http://n.sinaimg.cn/tech/transform/20170516/_Ty3-fyfeutq0630273.jpg"/></div>
+			  </ion-slide>
+		</ion-slide-box>
+		<ion-list>
+			<div class="list hlist">
+
+		    <a class="item item-thumbnail-left" ng-repeat="x in arr" href="#/tab/first/{{$index}}">
+		      <img src="{{x.img}}">
+		      <p style="white-space: pre-wrap;">{{x.title}}</p>
+		    </a>
+		
+		</div>
+			<ion-item>
+				<a href="#/tab/second" class="button button-balanced">进入第22页</a>
+			</ion-item>
+		</ion-list>
+		
+	</ion-content>
+	
+	
+	
+</ion-view>

@@ -1,0 +1,50 @@
+<ion-view view-title="首页">
+	
+	<ion-nav-buttons></ion-nav-buttons>
+	
+	
+	
+	<ion-content>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" class='lunbo' does-continue='true' auto-play="true">
+			  <ion-slide>
+			    <div class="box blue"><img src="../img/01.png"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box yellow"><img src="../img/02.png"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box pink"><img src="../img/03.png"/></div>
+			  </ion-slide>
+		</ion-slide-box>
+		<div class="yue"><img src="../img/04.png"/></div>	
+		<div class="row">
+		  <a class="col" href="#/tab/first"><img src="../img/05.png"/>
+		  	<p>创业沙龙</p>
+		  </a>
+		  <a class="col" href="#/tab/xiao"><img src="../img/06.png"/>
+		  	<p>小程序</p>
+		  </a>
+		  <a class="col" href="#/tab/hulian"><img src="../img/07.png"/>
+		  	<p>互联网</p>
+		  </a>
+		  <a class="col" href="#/tab/xiao"><img src="../img/08.png"/>
+		  	<p>微信营销</p>
+		  </a>
+		</div>
+		<div class="list hlist">
+
+		    <a class="item item-thumbnail-left" ng-repeat="x in arr" href="#/tab/home/{{$index}}">
+		      <img src="{{x.img}}">
+		      <p style="white-space: pre-wrap;">{{x.title}}</p>
+		    </a>
+		
+		</div>
+				
+				<a href="#/tab/first" class="button button-assertive">进入第一页</a>
+				<a href="#/tab/second" class="button button-balanced">进入第22页</a>	
+		
+	</ion-content>
+	
+	
+	
+</ion-view>

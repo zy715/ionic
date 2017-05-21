@@ -1,0 +1,33 @@
+<ion-view view-title="小程序">
+	
+	<ion-content>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" class='lunbo' does-continue='true' auto-play="true">
+			  <ion-slide>
+			    <div class="box blue"><img src="http://n.sinaimg.cn/tech/transform/20170516/u4me-fyfeutq0788591.jpg"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box yellow"><img src="http://n.sinaimg.cn/translate/20170509/JvPe-fyeyqem1939882.jpg"/></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="box pink"><img src="http://n.sinaimg.cn/tech/transform/20170413/roWQ-fyeimrn1652608.jpg"/></div>
+			  </ion-slide>
+		</ion-slide-box>
+		<ion-list>
+			<div class="list hlist">
+    		
+		    <a class="item item-thumbnail-left" ng-repeat="x in arr" href="#/tab/xiao/{{$index}}">
+		      <img src="{{x.img}}">
+		      <p style="white-space: pre-wrap;">{{x.title}}</p>
+		    </a>
+		
+		</div>
+			<ion-item>
+				<a href="#/tab/second" class="button button-balanced">进入第22页</a>
+			</ion-item>
+		</ion-list>
+		
+	</ion-content>
+	
+	
+	
+</ion-view>

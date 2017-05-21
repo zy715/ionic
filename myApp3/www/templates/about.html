@@ -1,0 +1,35 @@
+<ion-view view-title="资讯">
+	
+	<ion-content>
+		<div class="list card">
+	
+			  <div class="item item-avatar">
+			    <img src="../img/ionic.png">
+			    <h2>科技资讯</h2>
+			    <p>让你触手可得</p>
+			  </div>
+			
+			  <div class="item item-image">
+			    <img src="http://img.weiye.me/zcimgdir/album/file_58ca47b5c7d1b.png">
+			  </div>
+			
+			  <a class="item item-icon-left assertive">
+			    Start listening
+			  </a>
+			
+		</div>
+		<<ion-list>
+			<div class="list hlist">
+
+			    <a class="item item-thumbnail-left" ng-repeat="x in arr" href="#/tab/about/{{$index}}">
+			      <img src="{{x.img}}">
+			      <p style="white-space: pre-wrap;">{{x.title}}</p>
+			    </a>
+			</div>
+		</ion-list>
+		
+	</ion-content>
+	
+	
+	
+</ion-view>
